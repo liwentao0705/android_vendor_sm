@@ -323,3 +323,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
 
 $(call prepend-product-if-exists, vendor/extra/product.mk)
+
+# Inherit sabermod vendor
+SM_VENDOR := vendor/sabermod
+include $(SM_VENDOR)/Main.mk
